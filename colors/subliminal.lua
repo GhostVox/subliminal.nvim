@@ -1,5 +1,5 @@
 -- Subliminal Neovim Theme
--- A professional dark colorscheme with vibrant syntax highlighting
+-- A professional dark charcoal colorscheme with vibrant syntax highlighting
 
 -- Clear existing highlights
 vim.cmd("highlight clear")
@@ -13,16 +13,16 @@ vim.g.colors_name = "subliminal"
 -- Color palette
 local colors = {
 	-- Core syntax colors
-	amber = "#FFBF00", -- FUNCTIONS - bright amber
+	slate_blue = "#6A5ACD", -- FUNCTIONS - slate blue
 	peach = "#FFD4A3", -- STRINGS - warm peach
 	teal = "#4DB6AC", -- CLASSES/TYPES - professional teal
 	mint = "#1DE9B6", -- PROPERTIES - bright mint
 	red = "#FF5722", -- DERIVE BLOCKS - vibrant red
 
-	-- Dark backgrounds
-	bg = "#0d1117", -- Very dark background
-	bg_light = "#161b22", -- Slightly lighter background
-	bg_lighter = "#21262d", -- Even lighter for selections
+	-- Dark charcoal backgrounds
+	bg = "#1E1E1E", -- Dark charcoal background
+	bg_light = "#2A2A2A", -- Slightly lighter charcoal
+	bg_lighter = "#353535", -- Even lighter for selections
 	fg = "#f0f6fc", -- Bright white foreground
 	fg_dim = "#8b949e", -- Dimmed text
 
@@ -34,7 +34,7 @@ local colors = {
 
 	-- UI colors
 	gray = "#7d8590",
-	dark_gray = "#30363d",
+	dark_gray = "#404040",
 	green = "#56D364", -- For success/git additions
 	pink = "#FF69B4", -- For includes and special keywords
 	cyan = "#39D0D6", -- For operators
@@ -49,11 +49,11 @@ end
 hl("Normal", { fg = colors.fg, bg = colors.bg })
 hl("NormalFloat", { fg = colors.fg, bg = colors.bg_light })
 hl("FloatBorder", { fg = colors.blue, bg = colors.bg_light })
-hl("Cursor", { fg = colors.bg, bg = colors.amber })
+hl("Cursor", { fg = colors.bg, bg = colors.slate_blue })
 hl("CursorLine", { bg = colors.bg_light })
 hl("CursorColumn", { bg = colors.bg_light })
 hl("LineNr", { fg = colors.gray })
-hl("CursorLineNr", { fg = colors.amber, bold = true })
+hl("CursorLineNr", { fg = colors.slate_blue, bold = true })
 hl("SignColumn", { fg = colors.gray, bg = colors.bg })
 hl("Folded", { fg = colors.fg_dim, bg = colors.bg_light })
 hl("FoldColumn", { fg = colors.gray, bg = colors.bg })
@@ -65,7 +65,7 @@ hl("WinSeparator", { fg = colors.dark_gray })
 hl("Visual", { bg = colors.bg_lighter })
 hl("VisualNOS", { bg = colors.bg_lighter })
 hl("Search", { fg = colors.bg, bg = colors.mint, bold = true })
-hl("IncSearch", { fg = colors.bg, bg = colors.amber, bold = true })
+hl("IncSearch", { fg = colors.bg, bg = colors.slate_blue, bold = true })
 hl("Substitute", { fg = colors.bg, bg = colors.teal, bold = true })
 
 -- Popup menu
@@ -82,7 +82,7 @@ hl("WildMenu", { fg = colors.bg, bg = colors.cyan, bold = true })
 -- Tabline
 hl("TabLine", { fg = colors.fg_dim, bg = colors.bg_light })
 hl("TabLineFill", { bg = colors.bg_light })
-hl("TabLineSel", { fg = colors.amber, bg = colors.bg, bold = true })
+hl("TabLineSel", { fg = colors.slate_blue, bg = colors.bg, bold = true })
 
 -- Messages and errors
 hl("ErrorMsg", { fg = colors.red, bold = true })
@@ -105,7 +105,7 @@ hl("Float", { fg = colors.orange, bold = true })
 
 -- Identifiers
 hl("Identifier", { fg = colors.blue })
-hl("Function", { fg = colors.amber, bold = true })
+hl("Function", { fg = colors.slate_blue, bold = true })
 
 -- Statements
 hl("Statement", { fg = colors.blue, bold = true })
@@ -155,11 +155,11 @@ hl("GitSignsDelete", { fg = colors.red })
 -- Telescope (if using telescope.nvim)
 hl("TelescopeNormal", { fg = colors.fg, bg = colors.bg_light })
 hl("TelescopeBorder", { fg = colors.blue, bg = colors.bg_light })
-hl("TelescopePromptBorder", { fg = colors.amber, bg = colors.bg_light })
+hl("TelescopePromptBorder", { fg = colors.slate_blue, bg = colors.bg_light })
 hl("TelescopeResultsBorder", { fg = colors.mint, bg = colors.bg_light })
 hl("TelescopePreviewBorder", { fg = colors.teal, bg = colors.bg_light })
 hl("TelescopeSelection", { bg = colors.bg_lighter })
-hl("TelescopeMatching", { fg = colors.amber, bold = true })
+hl("TelescopeMatching", { fg = colors.slate_blue, bold = true })
 
 -- LSP
 hl("DiagnosticError", { fg = colors.red })
@@ -211,7 +211,7 @@ hl("NvimTreeFolderName", { fg = colors.blue })
 hl("NvimTreeOpenedFolderName", { fg = colors.teal, bold = true })
 hl("NvimTreeFileIcon", { fg = colors.fg_dim })
 hl("NvimTreeFileName", { fg = colors.fg })
-hl("NvimTreeSpecialFile", { fg = colors.amber, bold = true })
+hl("NvimTreeSpecialFile", { fg = colors.slate_blue, bold = true })
 hl("NvimTreeGitDirty", { fg = colors.orange })
 hl("NvimTreeGitNew", { fg = colors.green })
 hl("NvimTreeGitDeleted", { fg = colors.red })
