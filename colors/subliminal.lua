@@ -49,7 +49,7 @@ if vim.fn.exists("syntax_on") == 1 then
 end
 
 vim.o.background = "dark"
-vim.g.colors_name = "dark_pro"
+vim.g.colors_name = "subliminal"
 
 -- Editor
 hl("Normal", { fg = colors.fg, bg = colors.bg })
