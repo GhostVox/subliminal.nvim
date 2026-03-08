@@ -90,6 +90,9 @@ hl("TabLine", { fg = colors.fg_dim, bg = colors.bg_light })
 hl("TabLineFill", { bg = colors.bg_light })
 hl("TabLineSel", { fg = colors.amber, bg = colors.bg, bold = true })
 
+-- Copilot suggestions
+hl("CopilotSuggestion", { fg = colors.fg_dim, italic = true })
+
 -- Messages and errors
 hl("ErrorMsg", { fg = colors.red, bold = true })
 hl("WarningMsg", { fg = colors.orange, bold = true })
