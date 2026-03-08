@@ -53,7 +53,7 @@ vim.g.colors_name = "subliminal"
 
 -- Editor
 hl("Normal", { fg = colors.fg, bg = colors.bg })
-hl("NormalFloat", { fg = colors.fg, bg = colors.bg_light })
+hl("NormalFloat", { fg = colors.fg, bg = colors.bg_lighter })
 hl("FloatBorder", { fg = colors.blue_gray, bg = colors.bg_light })
 hl("Cursor", { fg = colors.bg, bg = colors.amber })
 hl("CursorLine", { bg = colors.bg_light })
