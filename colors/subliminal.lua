@@ -27,6 +27,7 @@ local colors = {
 	blue = "#8BAFC7", -- keywords, identifiers  (slate-blue)
 	blue_gray = "#4D6A80", -- borders, UI accents    (darker slate)
 	purple = "#B39DFB", -- conditionals, booleans
+	light_lavender = "#C4AEE1",
 
 	teal = "#4EC9B0", -- types (alias for cyan)
 	-- True green and yellow (distinct from the cool spectrum)
@@ -186,7 +187,7 @@ hl("LspReferenceRead", { bg = colors.bg_lighter })
 hl("LspReferenceWrite", { bg = colors.bg_lighter })
 
 -- Treesitter
-hl("@variable", { fg = colors.fg })
+hl("@variable", { fg = colors.light_lavender })
 hl("@variable.builtin", { fg = colors.blue, bold = true })
 hl("@function", { fg = colors.amber, bold = true })
 hl("@function.builtin", { fg = colors.amber, bold = true })
