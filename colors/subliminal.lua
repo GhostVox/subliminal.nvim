@@ -121,7 +121,7 @@ hl("Statement", { fg = colors.blue, bold = true })
 hl("Conditional", { fg = colors.purple, bold = true })
 hl("Repeat", { fg = colors.purple, bold = true })
 hl("Label", { fg = colors.blue })
-hl("Operator", { fg = colors.cyan, bold = true })
+hl("Operator", { fg = colors.white, bold = true })
 hl("Keyword", { fg = colors.blue, bold = true })
 hl("Exception", { fg = colors.red, bold = true })
 
