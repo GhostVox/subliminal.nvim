@@ -9,7 +9,8 @@ local colors = {
 	bg_lighter = "#21262d",
 
 	-- Foregrounds
-	fg = "#f0f6fc",
+	-- fg = "#f0f6fc",
+	fg = "#cdd6f4",
 	fg_dim = "#8b949e",
 	gray = "#7d8590",
 	dark_gray = "#30363d",
@@ -122,7 +123,7 @@ hl("Statement", { fg = colors.blue, bold = true })
 hl("Conditional", { fg = colors.purple, bold = true })
 hl("Repeat", { fg = colors.purple, bold = true })
 hl("Label", { fg = colors.blue })
-hl("Operator", { fg = colors.white, bold = true })
+hl("Operator", { fg = colors.light_lavender, bold = true })
 hl("Keyword", { fg = colors.blue, bold = true })
 hl("Exception", { fg = colors.red, bold = true })
 
@@ -187,7 +188,7 @@ hl("LspReferenceRead", { bg = colors.bg_lighter })
 hl("LspReferenceWrite", { bg = colors.bg_lighter })
 
 -- Treesitter
-hl("@variable", { fg = colors.light_lavender })
+hl("@variable", { fg = colors.fg })
 hl("@variable.builtin", { fg = colors.blue, bold = true })
 hl("@function", { fg = colors.amber, bold = true })
 hl("@function.builtin", { fg = colors.amber, bold = true })
