@@ -27,7 +27,7 @@ local colors = {
 	blue = "#8BAFC7", -- keywords, identifiers  (slate-blue)
 	blue_gray = "#4D6A80", -- borders, UI accents    (darker slate)
 	purple = "#B39DFB", -- conditionals, booleans
-	light_lavender = "#C4AEE1",
+	light_lavender = "#DDD9F6",
 
 	teal = "#4EC9B0", -- types (alias for cyan)
 	-- True green and yellow (distinct from the cool spectrum)
