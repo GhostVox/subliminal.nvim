@@ -188,7 +188,7 @@ hl("LspReferenceRead", { bg = colors.bg_lighter })
 hl("LspReferenceWrite", { bg = colors.bg_lighter })
 
 -- Treesitter
-hl("@variable", { fg = colors.fg })
+hl("@variable", { fg = colors.fg, bold = true })
 hl("@variable.builtin", { fg = colors.blue, bold = true })
 hl("@function", { fg = colors.amber, bold = true })
 hl("@function.builtin", { fg = colors.amber, bold = true })
