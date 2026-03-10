@@ -228,10 +228,13 @@ hl("NvimTreeGitDirty", { fg = colors.orange })
 hl("NvimTreeGitNew", { fg = colors.green })
 hl("NvimTreeGitDeleted", { fg = colors.red })
 
-vim.schedule(function()
-	pcall(require, "nvim-web-devicons")
-	local ok, devicons = pcall(require, "nvim-web-devicons")
-	if ok then
-		devicons.setup()
-	end
-end)
+-- MiniIcons
+hl("MiniIconsAzure", { fg = "#51a0cf" }) -- blue - lua, etc
+hl("MiniIconsBlue", { fg = colors.blue })
+hl("MiniIconsCyan", { fg = colors.cyan })
+hl("MiniIconsGreen", { fg = colors.green })
+hl("MiniIconsGrey", { fg = colors.gray })
+hl("MiniIconsOrange", { fg = colors.orange })
+hl("MiniIconsPurple", { fg = colors.purple })
+hl("MiniIconsRed", { fg = colors.red })
+hl("MiniIconsYellow", { fg = colors.yellow })
