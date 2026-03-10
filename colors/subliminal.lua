@@ -44,11 +44,11 @@ local function hl(group, opts)
 	vim.api.nvim_set_hl(0, group, opts)
 end
 
--- Clear existing highlights
---vim.cmd("highlight clear")
---if vim.fn.exists("syntax_on") == 1 then
---	vim.cmd("syntax reset")
---end
+--Clear existing highlights
+vim.cmd("highlight clear")
+if vim.fn.exists("syntax_on") == 1 then
+	vim.cmd("syntax reset")
+end
 
 vim.o.background = "dark"
 vim.g.colors_name = "subliminal"
