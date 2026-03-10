@@ -190,6 +190,9 @@ hl("LspReferenceText", { bg = colors.bg_lighter })
 hl("LspReferenceRead", { bg = colors.bg_lighter })
 hl("LspReferenceWrite", { bg = colors.bg_lighter })
 
+-- LSP Semantic Tokens (Rust)
+hl("@lsp.type.macro.rust", { fg = colors.red, bold = true })
+
 -- Treesitter
 hl("@variable", { fg = colors.fg, bold = true })
 hl("@variable.builtin", { fg = colors.blue, bold = true })
