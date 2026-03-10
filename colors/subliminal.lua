@@ -19,6 +19,8 @@ local colors = {
 	peach = "#FFD9B3", -- strings
 	amber = "#F5906A", -- functions, cursors
 	orange = "#FF9F43", -- numbers, constants
+	mistyLavender = "#BCB1D5",
+	mauve = "#CD9FE9",
 	red = "#FF6B6B", -- errors, macros
 	pink = "#F77FBE", -- keywords.return, includes
 
@@ -29,6 +31,7 @@ local colors = {
 	blue_gray = "#4D6A80", -- borders, UI accents    (darker slate)
 	purple = "#B39DFB", -- conditionals, booleans
 	light_lavender = "#DDD9F6",
+	electricBlue = "#C5BC91",
 
 	teal = "#4EC9B0", -- types (alias for cyan)
 	-- True green and yellow (distinct from the cool spectrum)
@@ -203,7 +206,7 @@ hl("@string", { fg = colors.peach })
 hl("@string.escape", { fg = colors.cyan, bold = true })
 hl("@number", { fg = colors.orange, bold = true })
 hl("@boolean", { fg = colors.purple, bold = true })
-hl("@constant", { fg = colors.orange, bold = true })
+hl("@constant", { fg = colors.electricBlue, bold = true })
 hl("@constant.builtin", { fg = colors.orange, bold = true })
 hl("@constructor", { fg = colors.teal, bold = true })
 hl("@parameter", { fg = colors.fg, italic = true })
