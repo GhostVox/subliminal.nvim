@@ -227,3 +227,11 @@ hl("NvimTreeSpecialFile", { fg = colors.amber, bold = true })
 hl("NvimTreeGitDirty", { fg = colors.orange })
 hl("NvimTreeGitNew", { fg = colors.green })
 hl("NvimTreeGitDeleted", { fg = colors.red })
+
+vim.schedule(function()
+	pcall(require, "nvim-web-devicons")
+	local ok, devicons = pcall(require, "nvim-web-devicons")
+	if ok then
+		devicons.setup()
+	end
+end)
