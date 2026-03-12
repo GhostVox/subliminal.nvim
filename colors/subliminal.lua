@@ -10,7 +10,7 @@ local colors = {
 
 	-- Foregrounds
 	-- fg = "#f0f6fc",
-	fg = "#cdd6f4",
+	fg = "#fef6fd",
 	fg_dim = "#8b949e",
 	gray = "#7d8590",
 	dark_gray = "#30363d",
@@ -23,6 +23,9 @@ local colors = {
 	mauve = "#CD9FE9",
 	red = "#FF6B6B", -- errors, macros
 	pink = "#F77FBE", -- keywords.return, includes
+	rose_pink = "#D6ACAC", --functions, cursors
+	rose_keyword = "#2F6B85", -- keywords , identifiers
+	rose_property = "#8FBDC6", -- properties , hints
 
 	-- Cool spectrum (mint → cyan → slate → purple)
 	mint = "#A8FFDD", -- hints, properties
@@ -31,10 +34,8 @@ local colors = {
 	blue_gray = "#4D6A80", -- borders, UI accents    (darker slate)
 	purple = "#B39DFB", -- conditionals, booleans
 	light_lavender = "#DDD9F6",
-	electricBlue = "#C5BC91",
+	muted_gold = "#C5BC91",
 
-	teal = "#4EC9B0", -- types (alias for cyan)
-	-- True green and yellow (distinct from the cool spectrum)
 	green = "#7EE787", -- git add, diff add
 	yellow = "#FDCB6E", -- warnings, diff change
 
@@ -111,7 +112,7 @@ hl("Todo", { fg = colors.pink, bg = colors.bg_light, bold = true })
 
 -- Constants
 hl("Constant", { fg = colors.orange, bold = true })
-hl("String", { fg = colors.peach })
+hl("String", { fg = colors.blue })
 hl("Character", { fg = colors.peach })
 hl("Number", { fg = colors.orange, bold = true })
 hl("Boolean", { fg = colors.purple, bold = true })
@@ -119,15 +120,15 @@ hl("Float", { fg = colors.orange, bold = true })
 
 -- Identifiers
 hl("Identifier", { fg = colors.blue })
-hl("Function", { fg = colors.amber, bold = true })
+hl("Function", { fg = colors.rose_pink, bold = true })
 
 -- Statements
 hl("Statement", { fg = colors.blue, bold = true })
 hl("Conditional", { fg = colors.purple, bold = true })
 hl("Repeat", { fg = colors.purple, bold = true })
 hl("Label", { fg = colors.blue })
-hl("Operator", { fg = colors.light_lavender, bold = true })
-hl("Keyword", { fg = colors.blue, bold = true })
+hl("Operator", { fg = colors.teal, bold = true })
+hl("Keyword", { fg = colors.rose_keyword, bold = true })
 hl("Exception", { fg = colors.red, bold = true })
 
 -- Preprocessor
@@ -138,10 +139,10 @@ hl("Macro", { fg = colors.red, bold = true })
 hl("PreCondit", { fg = colors.purple })
 
 -- Types
-hl("Type", { fg = colors.teal, bold = true })
-hl("StorageClass", { fg = colors.teal })
-hl("Structure", { fg = colors.teal, bold = true })
-hl("Typedef", { fg = colors.teal })
+hl("Type", { fg = colors.mauve, bold = true })
+hl("StorageClass", { fg = colors.mauve })
+hl("Structure", { fg = colors.mauve, bold = true })
+hl("Typedef", { fg = colors.mauve })
 
 -- Special
 hl("Special", { fg = colors.mint, bold = true })
@@ -191,36 +192,37 @@ hl("LspReferenceRead", { bg = colors.bg_lighter })
 hl("LspReferenceWrite", { bg = colors.bg_lighter })
 
 -- LSP Semantic Tokens (Rust)
-hl("@lsp.type.macro.rust", { fg = colors.red, bold = true })
+hl("@lsp.type.macro.rust", { fg = colors.blue, bold = true })
 
 -- Treesitter
-hl("@variable", { fg = colors.fg, bold = true })
+hl("@variable", { fg = colors.fg })
 hl("@variable.builtin", { fg = colors.blue, bold = true })
-hl("@function", { fg = colors.amber, bold = true })
-hl("@function.builtin", { fg = colors.amber, bold = true })
-hl("@variable.member", { fg = colors.mint, bold = true })
+hl("@function", { fg = colors.rose_pink, bold = true })
+hl("@function.builtin", { fg = colors.rose_pink, bold = true })
+hl("@variable.member", { fg = colors.rose_property, bold = true })
 hl("@method", { fg = colors.amber, bold = true })
-hl("@keyword", { fg = colors.blue, bold = true })
-hl("@keyword.function", { fg = colors.blue, bold = true })
+hl("@keyword", { fg = colors.rose_keyword, bold = true })
+hl("@keyword.function", { fg = colors.rose_keyword, bold = true })
+hl("@keyword.directive", { fg = colors.blue, bold = true })
 hl("@keyword.return", { fg = colors.pink, bold = true })
-hl("@type", { fg = colors.teal, bold = true })
-hl("@type.builtin", { fg = colors.teal })
+hl("@type", { fg = colors.amber, bold = true })
+hl("@type.builtin", { fg = colors.amber })
 hl("@string", { fg = colors.peach })
 hl("@string.escape", { fg = colors.cyan, bold = true })
 hl("@number", { fg = colors.orange, bold = true })
 hl("@boolean", { fg = colors.purple, bold = true })
-hl("@constant", { fg = colors.electricBlue, bold = true })
+hl("@constant", { fg = colors.muted_gold, bold = true })
 hl("@constant.builtin", { fg = colors.orange, bold = true })
 hl("@constructor", { fg = colors.teal, bold = true })
 hl("@parameter", { fg = colors.fg, italic = true })
-hl("@property", { fg = colors.mint, bold = true })
+hl("@property", { fg = colors.rose_property, bold = true })
 hl("@field", { fg = colors.mint })
 hl("@namespace", { fg = colors.purple, bold = true })
 hl("@tag", { fg = colors.blue, bold = true })
 hl("@tag.attribute", { fg = colors.mint })
 hl("@tag.delimiter", { fg = colors.cyan })
-hl("@attribute", { fg = colors.red, bold = true })
-hl("@decorator", { fg = colors.red, bold = true })
+hl("@attribute", { fg = colors.blue, bold = true })
+hl("@decorator", { fg = colors.blue, bold = true })
 
 -- Nvim-tree
 hl("NvimTreeNormal", { fg = colors.fg, bg = colors.bg_light })
